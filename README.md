@@ -24,6 +24,10 @@ Write your recipe:
 # recipe.rb
 
 Kropka::Recipe.new do
+  directory do
+    name "directory/tree/structure"
+  end
+
   file do
     source "path/to/source/file1"
     target "path/to/target/file1"
@@ -40,6 +44,7 @@ and apply it:
 
 ``` bash
 $ kropka apply recipe.rb
+Created directory directory/tree/structure
 Copied path/to/source/file1 to path/to/target/file1
 Copied path/to/source/file2 to path/to/target/file2
 ```

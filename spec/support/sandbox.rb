@@ -14,6 +14,7 @@ module Sandbox
   end
 
   def self.reset
+    FileUtils.rm_rf(::File.join(target_files_path, "directory"))
     FileUtils.rm_rf(::File.join(target_files_path, "bar.txt"))
   end
 

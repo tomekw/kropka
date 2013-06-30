@@ -1,4 +1,5 @@
 require_relative "kropka/cli"
+require_relative "kropka/directory"
 require_relative "kropka/file"
 require_relative "kropka/recipe"
 require_relative "kropka/version"
