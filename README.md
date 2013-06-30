@@ -2,6 +2,14 @@
 
 Manage your dotfiles
 
+## The name
+
+`kropka` means `dot` in Polish language
+
+## Rationale
+
+Inspired by Puppet and because I can...
+
 ## Installation
 
 ``` bash
