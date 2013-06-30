@@ -24,8 +24,15 @@ Write your recipe:
 # recipe.rb
 
 Kropka::Recipe.new do
-  source "path/to/source/file"
-  target "path/to/target/file"
+  file do
+    source "path/to/source/file1"
+    target "path/to/target/file1"
+  end
+
+  file do
+    source "path/to/source/file2"
+    target "path/to/target/file2"
+  end
 end
 ```
 
@@ -33,7 +40,8 @@ and apply it:
 
 ``` bash
 $ kropka apply recipe.rb
-Copied path/to/source/file to path/to/target/file
+Copied path/to/source/file1 to path/to/target/file1
+Copied path/to/source/file2 to path/to/target/file2
 ```
 
 ## Example
