@@ -8,7 +8,7 @@ module Kropka
 
     def create!
       FileUtils.mkdir_p(@name)
-      puts "Created directory #{@name}"
+      puts ["Created directory".color(:green), @name.color(:cyan)].join(" ")
     end
 
     private

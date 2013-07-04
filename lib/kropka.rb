@@ -1,3 +1,5 @@
+require "rainbow"
+
 require_relative "kropka/cli"
 require_relative "kropka/directory"
 require_relative "kropka/file"

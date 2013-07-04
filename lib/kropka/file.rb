@@ -8,7 +8,8 @@ module Kropka
 
     def copy!
       FileUtils.cp(@source, @target)
-      puts "Copied #{@source} to #{@target}"
+      puts ["Copied".color(:green), @source.color(:cyan), "to".color(:green),
+            @target.color(:cyan)].join(" ")
     end
 
     private
